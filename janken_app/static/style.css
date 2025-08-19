@@ -1,0 +1,57 @@
+body {
+    background: #c39d22;
+    background: linear-gradient(0deg,rgba(195, 157, 34, 1) 0%, rgba(39, 191, 190, 1) 100%);
+    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.btn-janken {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: #ffffffcc;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-janken:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ffffffdd;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-box p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.result-box h2 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
